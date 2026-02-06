@@ -1,0 +1,141 @@
+/* About Section */
+.about-section {
+    border-radius: 6px;
+    width: 1300px;
+    background-color: #1b1913;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+    /* Override previous padding */
+}
+
+@media (max-width: 1350px) {
+    .about-section {
+        width: 100%;
+        padding: 0 20px;
+    }
+}
+
+.about-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+    width: 100%;
+    max-width: 1300px;
+    padding: 20px 20px;
+    gap: 40px;
+    background-color: rgb(27, 25, 19);
+    transition: background-color 0.2s ease;
+}
+
+.about-container:hover {
+    background-color: #1D1B15;
+    cursor: pointer;
+}
+
+.about-content {
+    display: flex;
+    flex-direction: column;
+    /* Remove previous flex/width properties */
+}
+
+.about-title {
+    font-size: 22px;
+    font-weight: 300;
+    /* Matching feature-description weight which is often used for this kind of text in this design */
+    line-height: 1.3;
+    color: rgb(237, 236, 236);
+    /* Or oklab from description? feature-text h2 is rgb(237,236,236). Let's use that as it is the title. */
+    margin: 0 0 16px 0;
+    /* Adjust margin closer to feature text */
+    font-family: 'CursorGothic', sans-serif;
+    letter-spacing: -0.11px;
+}
+
+.about-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: #f54e00;
+    font-size: 16px;
+    font-weight: 400;
+    text-decoration: none;
+    font-family: 'CursorGothic', sans-serif;
+    line-height: 1.5;
+    letter-spacing: normal;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    transition: none;
+    /* Reset specific transition if needed, stick to link defaults */
+}
+
+.about-button:hover {
+    color: #f54e00bf;
+    background-color: transparent;
+}
+
+.about-button span {
+    font-size: 20px;
+    transition: none;
+}
+
+.about-button:hover span {
+    transform: none;
+    /* Feature link doesn't have the slide animation in CSS provided, just color change */
+}
+
+
+.about-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border-radius: 0;
+    /* Reset parent radius */
+    overflow: visible;
+    /* Reset overflow */
+}
+
+.about-image::before {
+    content: none;
+    /* Remove aspect ratio hack if we are matching feature section which relies on img natural height or width 100% */
+}
+
+.about-image img {
+    position: static;
+    /* Reset absolute positioning */
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+    display: block;
+}
+
+/* Responsive Design */
+@media (max-width: 968px) {
+    .about-container {
+        display: flex;
+        /* Feature uses flex direction column in media query */
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .about-section {
+        margin-bottom: 40px;
+    }
+
+    .about-title {
+        font-size: 36px;
+        /* Feature h2 bumps nicely on mobile */
+    }
+
+    .about-content {
+        width: 100%;
+        max-width: 100%;
+    }
+}

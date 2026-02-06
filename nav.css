@@ -1,0 +1,102 @@
+@font-face {
+    font-family: 'CursorGothic';
+    src: url('Assets/fonts/CursorGothic-main/fonts/CursorGothic-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+
+html,
+body {
+    width: 100%;
+}
+
+body {
+    background-color: #14120b;
+    color: rgb(255, 255, 255);
+    font-family: 'CursorGothic', sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    height: 64px;
+    background-color: #14120b;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1300px;
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+}
+
+.nav-logo {
+    height: 24px;
+    width: auto;
+    filter: brightness(0) invert(1);
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 32px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: rgb(237, 236, 236);
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.nav-links a:hover {
+    color: #ADB5B4;
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.sign-in-btn {
+    text-decoration: none;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 500;
+    transition: all 0.2s ease;
+    padding: 3px 12px;
+    border: 1px solid #333;
+    border-radius: 50px;
+}
+
+.sign-in-btn:hover {
+    background-color: #1B1913;
+}
+
+.download-btn {
+    text-decoration: none;
+    background-color: #edecec;
+    color: rgb(20, 18, 11);
+    padding: 4px 12px;
+    border-radius: 9999px;
+    font-size: 14px;
+    font-weight: 100;
+    font-family: 'CursorGothic', sans-serif;
+}
+
+.download-btn:hover {
+    background-color: #D7D6D5;
+}

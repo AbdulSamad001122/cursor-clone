@@ -1,0 +1,204 @@
+@font-face {
+    font-family: 'CursorGothic';
+    src: url('Assets/fonts/CursorGothic-main/fonts/CursorGothic-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Footer Section */
+.footer-section {
+    background-color: #1b1913;
+    padding: 60px 20px 40px;
+    color: #ffffff;
+    width: 100%;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Footer Links Grid */
+.footer-links-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 60px;
+    margin-bottom: 60px;
+}
+
+.footer-column {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer-column-title {
+    font-family: 'CursorGothic', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: rgba(237, 236, 236, 0.6);
+    margin: 0;
+    margin-bottom: 4px;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    color: rgb(237, 236, 236);
+    font-family: 'CursorGothic', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.5;
+    letter-spacing: 0.14;
+}
+
+.footer-links li {
+    margin: 0;
+}
+
+.footer-links a {
+    font-family: 'CursorGothic', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: rgb(237, 236, 236);
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    color: #d0d0d0;
+}
+
+/* Footer Bottom Bar */
+.footer-bottom {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    padding-top: 40px;
+}
+
+.footer-bottom-left {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.footer-copyright,
+.footer-certification {
+    font-family: 'CursorGothic', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.14;
+    line-height: 1.5;
+    color: oklab(0.943853 0.00107113 0.000336707 / 0.6);
+}
+
+.footer-bottom-right {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 12px;
+}
+
+.footer-theme-toggle {
+    display: flex;
+    align-items: center;
+    background-color: #26241e;
+    padding: 3px;
+    border-radius: 20px;
+    gap: 8px;
+}
+
+.footer-icon-btn {
+    background: transparent;
+    border: none;
+    color: #6b6b6b;
+    cursor: pointer;
+    width: 28px;
+    height: 28px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: all 0.2s ease;
+}
+
+.footer-icon-btn:hover {
+    color: #a1a1a1;
+}
+
+.footer-icon-btn.active {
+    background-color: #3A3833;
+    color: #e0e0e0;
+}
+
+.footer-language-btn {
+    background: #26241e;
+    border: none;
+    color: #e0e0e0;
+    cursor: pointer;
+    padding: 6px 12px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font-family: 'CursorGothic', sans-serif;
+    font-size: 13px;
+    border-radius: 20px;
+    transition: all 0.2s ease;
+}
+
+.footer-language-btn:hover {
+    background-color: #2B2923;
+}
+
+.footer-language-btn svg {
+    color: #6b6b6b;
+}
+
+.footer-language-btn:hover svg {
+    color: #a1a1a1;
+}
+
+.footer-world-icon {
+    font-size: 16px;
+}
+
+/* Responsive Design */
+@media (max-width: 968px) {
+    .footer-links-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 40px;
+    }
+}
+
+@media (max-width: 640px) {
+    .footer-section {
+        padding: 40px 15px 30px;
+    }
+
+    .footer-links-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+        margin-bottom: 40px;
+    }
+
+    .footer-bottom {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .footer-bottom-left {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .footer-bottom-right {
+        justify-content: flex-start;
+    }
+}

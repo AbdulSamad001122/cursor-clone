@@ -1,0 +1,140 @@
+@font-face {
+    font-family: 'CursorGothic';
+    src: url('Assets/fonts/CursorGothic-main/fonts/CursorGothic-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Use Cases Section */
+.usecases-section {
+    background-color: #14120b;
+    color: #ffffff;
+    margin: 60px auto 0 auto;
+    width: 1300px;
+}
+
+@media (max-width: 1350px) {
+    .usecases-section {
+        width: 100%;
+        padding: 0 20px;
+    }
+}
+
+.usecases-section-title {
+    font-size: 26px;
+    font-weight: 400;
+    margin-bottom: 26px;
+    color: #ffffff;
+    letter-spacing: normal;
+    line-height: normal;
+}
+
+/* Grid Container for the three boxes */
+.usecases-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+/* Individual Use Case Box */
+.usecase-box {
+    background-color: #1b1913;
+    border-radius: 4px;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 380px;
+}
+
+/* Content Area - Using Flexbox */
+.usecase-content {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.usecase-title {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.08px;
+    font-weight: 400;
+    font-family: 'CursorGothic', sans-serif;
+    font-style: normal;
+    color: rgb(237, 236, 236);
+    margin: 0;
+}
+
+.usecase-description {
+    font-family: 'CursorGothic', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 1.5;
+    color: oklab(0.943853 0.00107113 0.000336707 / 0.6);
+    margin: 0;
+}
+
+.usecase-link {
+    color: rgba(245, 78, 0);
+    text-decoration: none;
+    font-size: 16px;
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    margin-top: 4px;
+    transition: color 0.3s ease;
+}
+
+.usecase-link:hover {
+    color: #f54e00bf;
+}
+
+.usecase-link span {
+    font-size: 18px;
+}
+
+/* Image Area */
+.usecase-image {
+    width: 100%;
+    margin-top: 16px;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.usecase-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 4px;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .usecases-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .usecases-section {
+        padding: 60px 20px;
+    }
+
+    .usecases-section-title {
+        font-size: 36px;
+        margin-bottom: 40px;
+    }
+
+    .usecases-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .usecase-box {
+        min-height: auto;
+        padding: 24px;
+    }
+}

@@ -1,0 +1,105 @@
+@font-face {
+    font-family: 'CursorGothic';
+    src: url('Assets/fonts/CursorGothic-main/fonts/CursorGothic-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Final CTA Section */
+.final-cta-section {
+    background-color: #14120b;
+    padding: 120px 20px;
+    color: #ffffff;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.final-cta-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 40px;
+}
+
+.final-cta-title {
+    font-family: 'CursorGothic', sans-serif;
+    font-size: 64px;
+    font-weight: 400;
+    color: rgb(255, 255, 255);
+    margin: 0;
+    line-height: 1.2;
+    letter-spacing: -1.28;
+}
+
+.final-cta-button {
+    background-color: #ffffff;
+    color: rgb(20, 18, 11);
+    font-family: 'CursorGothic', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    text-decoration: none;
+    padding: 14px 24px;
+    border-radius: 50px;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+}
+
+.final-cta-button:hover {
+    background-color: #D7D6D5;
+}
+
+.download-icon-cta {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 16px;
+    height: 16px;
+}
+
+.download-icon-cta img {
+    width: 100%;
+    height: 100%;
+}
+
+/* Responsive Design */
+@media (max-width: 968px) {
+    .final-cta-section {
+        padding: 100px 20px;
+    }
+
+    .final-cta-title {
+        font-size: 48px;
+    }
+
+    .final-cta-button {
+        font-size: 15px;
+        padding: 12px 22px;
+    }
+}
+
+@media (max-width: 640px) {
+    .final-cta-section {
+        padding: 80px 15px;
+    }
+
+    .final-cta-title {
+        font-size: 36px;
+    }
+
+    .final-cta-button {
+        font-size: 14px;
+        padding: 12px 20px;
+    }
+
+    .final-cta-container {
+        gap: 30px;
+    }
+}

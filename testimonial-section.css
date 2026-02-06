@@ -1,0 +1,145 @@
+@font-face {
+    font-family: 'CursorGothic';
+    src: url('Assets/fonts/CursorGothic-main/fonts/CursorGothic-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+
+.testimonial-section {
+    width: 100%;
+    background-color: #14120b;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 0;
+}
+
+.testimonial-heading {
+    font-size: 36px;
+    font-weight: 400;
+    color: rgb(237, 236, 236);
+    text-align: center;
+    margin-bottom: 40px;
+    font-family: 'CursorGothic', sans-serif;
+    line-height: normal;
+    letter-spacing: normal;
+    line-height: 1.2;
+    letter-spacing: -0.72;
+}
+
+.testimonial-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    width: 1300px;
+}
+
+@media (max-width: 1150px) {
+    .testimonial-grid {
+        width: 100%;
+        padding: 0 20px;
+    }
+}
+
+.testimonial-card {
+    background-color: #1b1913;
+    border-radius: 4px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 200px;
+    transition: background-color 0.2s ease;
+    gap: 12px;
+}
+
+
+.testimonial-text {
+    color: rgb(237, 236, 236);
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 16px;
+    font-family: 'CursorGothic', sans-serif;
+    letter-spacing: 0.08px;
+}
+
+.testimonial-author {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: auto;
+    font-size: 14px;
+    font-family: 'CursorGothic', sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0.14px;
+}
+
+.author-image {
+    width: 36px;
+    height: 36px;
+    border-radius: 12%;
+    object-fit: cover;
+}
+
+.author-info {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    color: rgba(237, 236, 236, 0.6);
+}
+
+.author-name {
+    color: rgb(237, 236, 236);
+    font-size: 14px;
+    font-weight: 400;
+    margin: 0;
+    font-family: 'CursorGothic', sans-serif;
+}
+
+.author-title {
+    color: rgba(237, 236, 236, 0.6);
+    font-size: 13px;
+    margin: 0;
+    font-family: 'CursorGothic', sans-serif;
+    line-height: 1.4;
+    letter-spacing: 0.14px;
+}
+
+.testimonial-extra {
+    margin-top: 16px;
+    padding-top: 16px;
+    border-top: 1px solid #2a2722;
+}
+
+.testimonial-extra p {
+    color: #d4d4d4;
+    font-size: 14px;
+    line-height: 1.4;
+    margin: 4px 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+.testimonial-handle {
+    color: #888;
+    font-size: 13px;
+    margin-top: 8px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+    .testimonial-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 640px) {
+    .testimonial-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .testimonial-heading {
+        font-size: 24px;
+    }
+}
