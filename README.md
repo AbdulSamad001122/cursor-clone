@@ -24,6 +24,11 @@ The following sections have been rebuilt to match the original design:
 *   **Primary Font**: `CursorGothic` (Custom font used for headings and primary text).
 *   **Secondary Font**: System fonts (Sans-serif) used for smaller details or fallbacks.
 
+### Font Sizes
+*   **Headings**: `36px` (Section Titles), `26px` (Sub-section Titles), `22px` (Feature/Card Titles).
+*   **Body Text**: `16px` (Standard descriptions, Links), `15px` (Testimonials).
+*   **Small Text**: `14px` (Metadata, Footer links), `13px` (Badges, Tertiary info).
+
 ### Color Palette
 
 **Backgrounds**
