@@ -40,3 +40,16 @@ The following sections have been rebuilt to match the original design:
 *   `#ff4d00`: Primary accent color (Links, arrows, hover states).
 *   `#e0e0e0`: Button hover states.
 
+## Screenshots
+
+![Screenshot 1](Assets/screenshots/Screenshot%202026-02-06%20215604.png)
+![Screenshot 2](Assets/screenshots/Screenshot%202026-02-06%20215616.png)
+![Screenshot 3](Assets/screenshots/Screenshot%202026-02-06%20215629.png)
+![Screenshot 4](Assets/screenshots/Screenshot%202026-02-06%20215648.png)
+![Screenshot 5](Assets/screenshots/Screenshot%202026-02-06%20215700.png)
+![Screenshot 6](Assets/screenshots/Screenshot%202026-02-06%20215710.png)
+![Screenshot 7](Assets/screenshots/Screenshot%202026-02-06%20215719.png)
+![Screenshot 8](Assets/screenshots/Screenshot%202026-02-06%20215736.png)
+![Screenshot 9](Assets/screenshots/Screenshot%202026-02-06%20215751.png)
+![Screenshot 10](Assets/screenshots/Screenshot%202026-02-06%20215805.png)
+![Screenshot 11](Assets/screenshots/Screenshot%202026-02-06%20215815.png)

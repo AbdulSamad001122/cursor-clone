@@ -31,7 +31,8 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 12px;
-    width: 1300px;
+    width: 100%;
+    max-width: 1300px;
 }
 
 @media (max-width: 1150px) {
