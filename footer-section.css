@@ -110,7 +110,6 @@
     background-color: #26241e;
     padding: 3px;
     border-radius: 20px;
-    gap: 8px;
 }
 
 .footer-icon-btn {
@@ -118,13 +117,13 @@
     border: none;
     color: #6b6b6b;
     cursor: pointer;
-    width: 28px;
-    height: 28px;
+    width: 36px;
+    height: 24px;
     padding: 0;
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 50%;
+    border-radius: 20px;
     transition: all 0.2s ease;
 }
 
@@ -142,7 +141,7 @@
     border: none;
     color: #e0e0e0;
     cursor: pointer;
-    padding: 6px 12px;
+    padding: 4px 10px;
     display: flex;
     align-items: center;
     gap: 4px;
@@ -156,8 +155,16 @@
     background-color: #2B2923;
 }
 
+.footer-icon-btn svg {
+    width: 15px;
+    height: 15px;
+}
+
 .footer-language-btn svg {
-    color: #e0e0e0;
+    color: #EDECEC;
+    width: 14px;
+    height: 14px;
+    opacity: 70%;
 }
 
 .footer-language-btn:hover svg {
@@ -165,7 +172,7 @@
 }
 
 .footer-world-icon {
-    font-size: 16px;
+    font-size: 14px;
 }
 
 /* Responsive Design */

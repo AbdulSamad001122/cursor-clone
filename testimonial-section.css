@@ -99,11 +99,11 @@
 }
 
 .author-title {
-    color: rgba(237, 236, 236, 0.6);
-    font-size: 13px;
+    color: oklab(0.943853 0.00107113 0.000336707 / 0.6);
+    font-size: 14px;
     margin: 0;
     font-family: 'CursorGothic', sans-serif;
-    line-height: 1.4;
+    line-height: 1.5;
     letter-spacing: 0.14px;
 }
 
