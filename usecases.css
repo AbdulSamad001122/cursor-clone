@@ -75,6 +75,7 @@
     line-height: 1.5;
     color: oklab(0.943853 0.00107113 0.000336707 / 0.6);
     margin: 0;
+    margin-bottom: 10px;
 }
 
 .usecase-link {

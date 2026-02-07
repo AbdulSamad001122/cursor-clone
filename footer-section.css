@@ -14,7 +14,7 @@
 }
 
 .footer-container {
-    max-width: 1200px;
+    max-width: 1300px;
     margin: 0 auto;
 }
 
@@ -157,7 +157,7 @@
 }
 
 .footer-language-btn svg {
-    color: #6b6b6b;
+    color: #e0e0e0;
 }
 
 .footer-language-btn:hover svg {

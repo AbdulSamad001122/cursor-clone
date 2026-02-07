@@ -14,13 +14,14 @@
 }
 
 .highlights-container {
-    max-width: 1200px;
+    max-width: 1300px;
     margin: 0 auto;
     /* Using CSS Grid for outer container */
     display: grid;
     grid-template-columns: 250px 1fr;
     grid-template-rows: auto auto;
     align-items: start;
+    column-gap: 55px;
 }
 
 .highlights-main-title {
@@ -46,9 +47,9 @@
 
 /* Using Flexbox for individual highlight items */
 .highlight-item {
-    width: 700px;
+    width: 650px;
     background-color: #201e18;
-    border: 1px solid #2a2a2a;
+    border: 1px solid #25231D;
     border-radius: 4px;
     padding: 14px 14px;
     transition: all 0.3s ease;
